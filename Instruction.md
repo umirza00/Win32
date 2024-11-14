@@ -31,8 +31,8 @@ This guide provides a comprehensive approach for deploying the Zscaler Client vi
        - install.ps1
        - uninstall.bat
        - uninstall.ps1
-       - zscaler.msi
-       - zscaler.mst
+       - Zscaler-windows-3.8.0.100-installer-x64.msi
+       - zscaler-client-connector-msi.mst
      - **Output** (folder)
        - install.intunewin
      - **Detection** (folder)
