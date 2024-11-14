@@ -82,10 +82,18 @@ This guide provides a comprehensive approach for deploying the Zscaler Client vi
 1. **Intune Console**  
    Access Intune at [Microsoft Intune](https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/AppsWindowsMenu/~/windowsApps).
 
-2. **Application Configuration**
-   - Click **Add**, select **Windows app (Win32)**, and upload the `.intunewin` package.
-   - Configure **App Information**, **Program**, **Requirements**, and upload the **Detection Script**.
-   - Complete setup by defining dependencies, supersedence, and group assignment. Finally, create the deployment.
+2. **Add the Application**  
+   Click **Add**, select **Windows app (Win32)**, and upload the `.intunewin` package.
 
-3. **Monitoring Deployment**  
+3. **Configure App Information and Scripts**  
+   - Set up **App Information**.
+   - Under **Program**, specify:
+     - **Install script**: `install.bat`
+     - **Uninstall script**: `uninstall.bat`
+   - Configure **Requirements** and upload the **Detection Script**.
+
+4. **Complete Setup**  
+   Define **Dependencies**, **Supersedence**, and **Group Assignment**. Once configured, click **Create** to finalize the deployment.
+
+5. **Monitoring Deployment**  
    After setup, allow some time for package upload and monitor the deployment status.
