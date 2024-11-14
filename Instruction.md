@@ -9,8 +9,12 @@ This guide provides a comprehensive approach for deploying the Zscaler Client vi
    
 2. **Windows SDK Installation**  
    Install Windows SDK on a Windows device with the necessary modules selected. After installation, navigate to `C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x86` and install "Orca-x86_en-us."
+   - **Required Modules**
+     - Windows Performance Toolkit
+     - Debugging Tools for Windows
+     - MSI Tools
 
-3. **Orca Tool Configuration**  
+4. **Orca Tool Configuration**  
    Launch Orca, open the Zscaler `.msi` file, and add the following properties under the `Property` table:
    
    - Property: `CLOUDNAME`
